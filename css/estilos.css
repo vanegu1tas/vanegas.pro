@@ -1,0 +1,386 @@
+body{
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  /* border: 12px solid white; */
+  /* border: 1px solid green; */
+}
+
+header{
+  width: 100vw;
+}
+
+hr {
+  width: 100%;
+  border: none;
+  margin: 0;
+  border-top: 1px solid #b4b4b4;
+}
+
+h1, h2, h3 {
+  font-family: 'Inter', sans-serif;
+  color: #041946;
+}
+
+h2{
+  font-size: 1.56em;
+  color: rgb(230, 38, 198);
+}
+
+h3{
+  margin: 28px 0 14px 0;
+}
+
+p {
+  /* margin: 20px 0; */
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 15px;
+  color: #333333;
+}
+
+a {
+  text-decoration: none;
+  /* text-decoration-color: #b4b4b4; */
+  color: inherit;
+}
+
+li {
+  line-height: 5px;
+}
+
+.nav {
+  height: 35px;
+  width: 100%;
+  /* background-color: rgb(230, 230, 230); */
+  background: #FFFFFF;
+  position: fixed;
+  z-index: 1;
+}
+.nav-container {
+  display:flex;
+  align-items: center;
+  height: inherit;
+  width: fit-content;
+  padding-left: 50px;
+  /* border: 1px solid red; */
+}
+
+.nav-item {
+  display:flex;
+  align-items: center;
+  height: inherit;
+  width: fit-content;
+  padding: 0 6px;
+  /* border: 1px solid rgb(76, 0, 255); */
+}
+.nav-item:hover{
+  background: rgba(211, 241, 255, .4);
+  border-radius: 2px;
+}
+
+.p-nav{
+  margin: 0;
+}
+
+.li-last{
+  margin-bottom: 56px;
+}
+
+.header-bg{
+  /* background-color: #041946; Azul oscuro */
+  /* background-image: linear-gradient(to left, #4DCCEC 0%, #F931D9 90%); */
+  background-image: linear-gradient(to left, #4DCCEC 20%, #320F83 90%);
+  /* background-image: linear-gradient(to left, #F931D9 0%, #320F83 90%); */
+  width: 100vw;
+  height: 20vh;
+  /* border-radius: 0 0 80px 80px; */
+}
+
+.container-general{
+  /* border: 1px solid rgb(72, 4, 117); */
+  width: 900px;
+  height: auto;
+  margin: 0 auto;
+  flex: 1 0 auto;
+  
+}
+.container{
+  /* border: 1px solid red; */
+  width: 900px;
+  height: auto;
+  margin: 0 auto;
+  padding: 0 20px 0 20px;
+  box-sizing: border-box;
+  position: relative;
+  
+}
+
+.intro {
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  position: relative;
+
+
+}
+
+.icon2{
+  position: absolute;
+  /* bottom: 110px; */
+  top: -112px;
+  margin: 16px 0 16px 5px;
+}
+
+.intro-h1{
+  font-size: 3.1em;
+  margin-bottom: 20px;
+}
+
+.intro-detail{
+  /* border: 1px solid blue; */
+  margin-top: 40px;
+  /* padding: 0 10px 0 10px; */
+  position: relative;
+  
+}
+
+.icon{
+  position: absolute;
+  bottom: 181px;
+  margin: 16px 0 16px 5px;
+  /* border: 1px solid rgb(255, 19, 235); */
+}
+
+.icon-unicorn{
+  width: 140px;
+}
+
+.intro-button{
+  /* border: 1px solid purple; */
+  width: 0;
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+}
+
+.contact-button {
+  border-style: none;
+  border-radius: 26px;
+  color: white;
+  /* background-color: slateblue; */
+  background-color: #041946;
+  /* background-image: linear-gradient(to left, #041946 0%, #6a5acd 90%); */
+  /* background-image: linear-gradient(45deg, #4DCCEC 0%, #320F83 100%); */
+  /* background: linear-gradient(70deg, blue, pink); */
+  /* box-shadow:  3px 4px 10px rgba(34, 34, 34, 0.68); */
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 3px 4px rgba(0,0,0,0.53);
+  width: 50px;
+  height: 50px;
+  padding: 10px 10px;
+  position: absolute;
+  top: 79px;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+.icon-contact{
+  width: 22px;
+}
+.content {
+  /* border: 1px solid green; */
+  width: 100%;
+  height: 28px;
+  margin-bottom: 5px;
+  display: flex;
+  align-items: center;
+  padding-left: 4px;
+}
+
+.content:hover{
+  background: rgba(211, 241, 255, .4);
+  /* background: rgb(203, 195, 218); */
+  border-radius: 5px;
+  padding-left: 4px;
+}
+
+.p-menu {
+  padding-left: 10px;
+}
+
+.container-projects{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.project {
+  width: 400px;
+  height: 300px;
+  background-color: rebeccapurple;
+  margin: 10px;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.project img {
+
+width: 400px;
+height: 300px;
+}
+
+.project-img{
+  width: 774px;
+  height: auto;
+  /* background-color: lawngreen; */
+  /* background-image: url(/images/iconb.png); */
+  margin: 0 auto;
+  margin-top: 28px;
+  margin-bottom: 28px;
+  border-radius: 15px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+.footer {
+  /* border: 1px solid blue; */
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.p-footer{
+  margin: 0 auto;
+  padding: 8px 0 8px 0;
+}
+
+.luna{
+  /* border: 1px solid green; */
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  right: 50px;
+  /* margin-right: 10px; */
+}
+
+@media screen and (max-width: 1023px){
+  .container{
+    width: 88vw;
+  }
+  .container-general{
+    width: 100vw;
+  }
+  
+}
+@media screen and (max-width: 768px){
+  .container{
+    width: 90vw;
+  }
+  .container-general{
+    width: 100vw;
+  }
+}
+@media screen and (max-width: 724px){
+  .icon{
+    bottom: 211px;
+  }
+}
+@media screen and (max-width: 569px){
+  .intro-h1{
+    font-size: 2.7em;
+  }
+  .icon{
+    bottom: 193px;
+  }
+  .container{
+    width: 100vw;
+  }
+  .container-general{
+    width: 100vw;
+  }
+  .luna{
+    right: 20px;
+  }
+}
+@media screen and (max-width: 480px){
+  h2{
+    font-size: 1.2em;
+    margin: 8px 0 ;
+  }
+  h3{
+    font-size: 17px;
+  }
+  .container{
+    width: 100vw;
+  }
+  .container-general{
+    width: 100vw;
+  }
+  .icon{
+    bottom: 131px;
+  }
+  .icon-unicorn{
+    width: 120px;
+  }
+  .intro-h1{
+    font-size: 2em;
+    margin-bottom: 8px;
+  }
+  .contact-button{
+    width: 36px;
+    height: 36px;
+    top: 62px;
+  }
+  .icon-contact{
+    width: 17px;
+  }
+
+}
+@media screen and (max-width: 362px){
+  .intro-h1{
+    font-size: 1.6em;
+    margin-bottom: 8px;
+  }
+  h2{
+    font-size: 1em;
+    margin: 8px 0 ;
+  }
+  .icon{
+    bottom: 113px;
+  }
+  .container{
+    width: 100vw;
+  }
+  .contact-button{
+    top: 56px;
+  }
+}
+@media screen and (max-width: 320px){
+  h2{
+    font-size: 1em;
+    margin: 8px 0 ;
+  }
+  h3{
+    font-size: 1em;
+  }
+  .header-bg{
+    height: 18vh;
+  }
+  .container{
+    width: 100vw;
+  }
+  .contact-button{
+    top: 56px;
+  }
+  .icon-unicorn{
+    width: 96px;
+  }
+  .luna{
+    right: 0px;
+  }
+}
