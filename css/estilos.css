@@ -128,8 +128,7 @@ li {
 
 .icon2{
   position: absolute;
-  /* bottom: 110px; */
-  top: -112px;
+  bottom: 123px;
   margin: 16px 0 16px 5px;
 }
 
@@ -216,7 +215,6 @@ li {
 }
 .project {
   width: 400px;
-  height: 300px;
   background-color: rebeccapurple;
   margin: 10px;
   border-radius: 15px;
@@ -225,23 +223,28 @@ li {
 
 .project img {
 
-width: 400px;
-height: 300px;
+width: 100%;
+margin: 0 auto;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  object-fit: cover;
 }
 
-.project-img{
-  width: 774px;
-  height: auto;
+/* .project-img{
+  width: 100%;
+  height: max-content; */
   /* background-color: lawngreen; */
   /* background-image: url(/images/iconb.png); */
-  margin: 0 auto;
+  /* margin: 0 auto;
   margin-top: 28px;
   margin-bottom: 28px;
   border-radius: 15px;
   overflow: hidden;
   display: flex;
   justify-content: center;
-}
+  object-fit: cover;
+} */
 
 .footer {
   /* border: 1px solid blue; */
@@ -265,10 +268,12 @@ height: 300px;
   height: 15px;
   position: absolute;
   right: 50px;
-  /* margin-right: 10px; */
 }
 
 @media screen and (max-width: 1023px){
+  .nav-container{
+    padding-left: 5px;
+  }
   .container{
     width: 88vw;
   }
@@ -276,6 +281,15 @@ height: 300px;
     width: 100vw;
   }
   
+  .container-projects{
+    width: 100%;
+    justify-content: space-between;
+  }
+  .project{
+    width: 49%;
+    margin: 8px 0;
+    
+  }
 }
 @media screen and (max-width: 768px){
   .container{
@@ -284,6 +298,7 @@ height: 300px;
   .container-general{
     width: 100vw;
   }
+
 }
 @media screen and (max-width: 724px){
   .icon{
@@ -296,6 +311,9 @@ height: 300px;
   }
   .icon{
     bottom: 193px;
+  }
+  .icon2{
+    bottom: 112px;
   }
   .container{
     width: 100vw;
@@ -339,6 +357,15 @@ height: 300px;
   .icon-contact{
     width: 17px;
   }
+  .project{
+    width: 100%;
+  }
+  .icon2{
+    bottom: 69px;
+  }
+  .icon2 img{
+    width: 130px;
+  }
 
 }
 @media screen and (max-width: 362px){
@@ -358,6 +385,13 @@ height: 300px;
   }
   .contact-button{
     top: 56px;
+  }
+  .icon2{
+    bottom: 63px;
+    margin: 16px 0 16px -6px;
+  }
+  .icon2 img{
+    width: 100px;
   }
 }
 @media screen and (max-width: 320px){
