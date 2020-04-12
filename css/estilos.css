@@ -157,7 +157,7 @@ li {
 
 .icon{
   position: absolute;
-  bottom: 181px;
+  bottom: 111px;
   margin: 16px 0 16px 5px;
   /* border: 1px solid rgb(255, 19, 235); */
 }
@@ -189,7 +189,7 @@ li {
   height: 50px;
   padding: 10px 10px;
   position: absolute;
-  top: 79px;
+  top: -114px;
   font-family: 'Inter', sans-serif;
   font-size: 14px;
   letter-spacing: 1px;
@@ -314,16 +314,14 @@ margin: 0 auto;
 
 }
 @media screen and (max-width: 724px){
-  .icon{
-    bottom: 211px;
-  }
+
 }
 @media screen and (max-width: 569px){
   .intro-h1{
     font-size: 2.7em;
   }
   .icon{
-    bottom: 193px;
+    bottom: 92px;
   }
   .icon2{
     bottom: 112px;
@@ -350,7 +348,7 @@ margin: 0 auto;
     width: 100vw;
   }
   .icon{
-    bottom: 131px;
+    bottom: 68px;
   }
   .icon-unicorn{
     width: 120px;
@@ -362,7 +360,7 @@ margin: 0 auto;
   .contact-button{
     width: 36px;
     height: 36px;
-    top: 62px;
+    top: -75px;
   }
   .icon-contact{
     width: 17px;
@@ -397,10 +395,13 @@ margin: 0 auto;
     margin: 8px 0 ;
   }
   .icon{
-    bottom: 113px;
+    bottom: 54px;
+  }
+  .icon-unicorn{
+    width: 100px;
   }
   .contact-button{
-    top: 56px;
+    top: -63px;
   }
   .icon2{
     bottom: 63px;
@@ -426,7 +427,7 @@ margin: 0 auto;
     height: 18vh;
   }
   .contact-button{
-    top: 56px;
+    top: -67px;
   }
   .icon-unicorn{
     width: 96px;
