@@ -81,10 +81,12 @@ li {
 .p-nav{
   margin: 0;
 }
+li p{
+  line-height: 16px;
+}
 
 .li-last{
-  margin-bottom: 56px;
-  line-height: initial;
+  margin-bottom: 28px;
 }
 
 .header-bg{
@@ -383,6 +385,10 @@ object-fit: cover;
   .about-img img{
     height: 185px;
   }
+  .cv-button{
+    display: block;
+    margin: 20px auto 20px auto;
+  }
 }
 
 @media screen and (max-width: 480px){
@@ -481,6 +487,9 @@ object-fit: cover;
   .icon2.icon2-intern{
     bottom: 25px;
     margin: 16px 0;
+  }
+  .cv-button{
+    margin: 5px auto 20px auto;
   }
 }
 @media screen and (max-width: 320px){
