@@ -3,6 +3,7 @@ body{
   margin: 0;
   display: flex;
   flex-direction: column;
+  height: 100vh;
 }
 
 header{
@@ -110,7 +111,6 @@ li {
   padding: 0 20px 0 20px;
   box-sizing: border-box;
   position: relative;
-  
 }
 
 .intro-title{
@@ -204,6 +204,7 @@ li {
   display: flex;
   align-items: center;
   padding-left: 4px;
+  flex: 1 0 auto;
 }
 
 .content:hover{
@@ -238,6 +239,35 @@ overflow: hidden;
 display: flex;
 justify-content: center;
 object-fit: cover;
+}
+
+.about-info{
+  width: 60%;
+  box-sizing: border-box;
+  padding-right: 20px;
+}
+
+.about-img{
+  width: 40%;
+  margin-top: 28px;
+}
+
+.about-img img{
+  width: 100%;
+  border-radius: 15px;
+}
+
+.cv-button{
+  border-style: none;
+  border-radius: 26px;
+  color: white;
+  background-color: #041946;
+  width: 130px;
+  padding: 10px;
+  font-family: 'Inter', sans-serif;
+  box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.19);
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
 
 .footer {
@@ -297,6 +327,19 @@ object-fit: cover;
     width: 100vw;
   }
 
+  .about-img{
+    width: 40%;
+    margin-top: 68px;
+  }
+  
+  .about-img img{
+    /* width: 100%; */
+    height: 290px;
+    border-radius: 15px;
+    object-position: 28% 50%;
+    object-fit: cover;
+  }
+
 }
 
 @media screen and (max-width: 569px){
@@ -322,6 +365,23 @@ object-fit: cover;
 
   .luna{
     right: 20px;
+  }
+
+  .intro.intro-res{
+    flex-direction: column-reverse;
+  }
+
+  .about-info{
+    width: 100%;
+    padding: 0;
+  }
+
+  .about-img{
+    width: 100%;
+    margin-top: 8px;
+  }
+  .about-img img{
+    height: 185px;
   }
 }
 
