@@ -6,6 +6,8 @@
   <link href="https://fonts.googleapis.com/css?family=Inter:700|Source+Sans+Pro&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/animation.css">
   <link rel="stylesheet" href="../css/estilos.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <script src="https://unpkg.com/micromodal/dist/micromodal.min.js"></script>
 
   <title>Vanegas.pro</title>
 </head>
@@ -43,7 +45,54 @@
         <h2>Projects I have been worked on.</h2>
       </div>
       <div class="intro-button">
-        <button class="contact-button contact-intern"><img src="../images/envelope_2709.png" alt="" class="icon-contact"></button>
+        <button class="contact-button contact-intern contact-button" id="button-modal" data-custom-close="modal-1"><img src="../images/envelope_2709.png" alt="" class="icon-contact"></button>
+        <!-- Modal!  -->
+        <div class="modal micromodal-slide" id="modal-1" aria-hidden="true">
+          <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+            <div
+              class="modal__container"
+              role="dialog"
+              aria-modal="true"
+              aria-labelledby="modal-1-title"
+            >
+              <header class="modal__header">
+                <h2 class="modal__title" id="modal-1-title">
+                  Contact me
+                </h2>
+                <button
+                  class="modal__close"
+                  aria-label="Close modal"
+                  data-micromodal-close
+                ></button>
+              </header>
+              <main class="modal__content" id="modal-1-content">
+                <form action="/enviar correo/" class="form-email">
+                  <div class="cont-modal">
+                    <img src="../images/nerd-face_1f913.png" width="22px" alt="icono">
+                    <label class="label-modal">E-mail</label>
+                  </div>
+                  <input class="custom" type="text" placeholder="Your e-mail here" id="email" />
+                  <div class="cont-modal">
+                    <img src="../images/candy.png" width="22px" alt="icono">  
+                    <label class="label-modal">Message</label>
+                  </div>
+                  <textarea class= "text-area" placeholder="Remember, be nice"name="story" rows="3" cols="20"></textarea>
+                </form>
+              </main>
+              <footer class="modal__footer">
+                <button class="modal__btn modal__btn-primary">Send</button>
+                <button
+                  class="modal__btn"
+                  data-micromodal-close
+                  aria-label="Close this dialog window"
+                >
+                  Close
+                </button>
+              </footer>
+            </div>
+          </div>
+        </div>
+        <!-- Aca acaba el Modal------------- -->
       </div>
     </div>
   </div>
@@ -86,5 +135,6 @@
       </div>
     </div>
   </footer>
+  <script src="../script/script.js"></script>
 </body>
 </html>
