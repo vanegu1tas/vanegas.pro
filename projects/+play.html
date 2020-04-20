@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Inter:700|Source+Sans+Pro&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/animation.css">
+  <link rel="stylesheet" href="../css/estilos.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <script src="https://unpkg.com/micromodal/dist/micromodal.min.js"></script>
+
+  <title>Vanegas.pro</title>
+</head>
+<body>
+  <header>
+    <nav class="nav fadeInDown">
+      <div class="nav-container">
+        <a href="../index.html">
+          <div class="nav-item">
+            <img class= "robot" src="../images/unicorni.png" alt="icon" width="14px" style="margin-right: 6px;">
+            <p class="p-nav">Vanegas.pro</p>
+          </div>
+        </a>
+        <span style="margin: 0 2px;" ><p class="p-nav">/</p></span>
+        <a href="products.html">
+        <div class="nav-item">
+          <img class= "robot" src="../images/robot2.png" alt="icon" width="14px" style="margin-right: 6px;">
+          <p class="p-nav">Digital Products</p>
+        </div>
+        </a>
+        <span style="margin: 0 2px;" ><p class="p-nav">/</p></span>
+        <a href="+play.html">
+        <div class="nav-item">
+          <img class= "gear" src="../images/gear.png" alt="icon" width="14px" style="margin-right: 6px;">
+          <p class="p-nav">+Play</p>
+        </div>
+        </a>
+      </div>
+    </nav>
+    <div class="header-bg">
+
+    </div>
+  </header>
+  <div class="container">
+    <div class="intro-title">
+      <figure class="icon2 icon2-intern">
+        <img src="../images/robot2.png" alt="Icon"  width="150px">
+      </figure>
+      <h1 class="intro-h1 title-h1">+Play website</h1>
+    </div>
+    <div class="intro">
+      <div class="intro-detail">
+        <h2>+Play is a creative studio based in Bogotá, Colombia. They wanted to share
+          their work in a clean and unique way, So they contact us to develop together their 
+          digital portfolio.
+        </h2>
+      </div>
+      <div class="intro-button">
+        <button class="contact-button contact-intern contact-button" id="button-modal" data-custom-close="modal-1"><img src="../images/envelope_2709.png" alt="" class="icon-contact"></button>
+        <!-- Modal!  -->
+        <div class="modal micromodal-slide" id="modal-1" aria-hidden="true">
+          <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+            <div
+              class="modal__container"
+              role="dialog"
+              aria-modal="true"
+              aria-labelledby="modal-1-title"
+            >
+              <header class="modal__header">
+                <h2 class="modal__title" id="modal-1-title">
+                  Contact me
+                </h2>
+                <button
+                  class="modal__close"
+                  aria-label="Close modal"
+                  data-micromodal-close
+                ></button>
+              </header>
+              <main class="modal__content" id="modal-1-content">
+                <form action="/enviar correo/" class="form-email">
+                  <div class="cont-modal">
+                    <img src="../images/nerd-face_1f913.png" width="22px" alt="icono">
+                    <label class="label-modal">E-mail</label>
+                  </div>
+                  <input class="custom" type="text" placeholder="Your e-mail here" id="email" />
+                  <div class="cont-modal">
+                    <img src="../images/candy.png" width="22px" alt="icono">  
+                    <label class="label-modal">Message</label>
+                  </div>
+                  <textarea class= "text-area" placeholder="Remember, be nice"name="story" rows="3" cols="20"></textarea>
+                </form>
+              </main>
+              <footer class="modal__footer">
+                <button class="modal__btn modal__btn-primary">Send</button>
+                <button
+                  class="modal__btn"
+                  data-micromodal-close
+                  aria-label="Close this dialog window"
+                >
+                  Close
+                </button>
+              </footer>
+            </div>
+          </div>
+        </div>
+        <!-- Aca acaba el Modal------------- -->
+      </div>
+    </div>
+  </div>
+  <div class="container-general">
+    <div class="container">
+      <h3>The Challenge</h3>
+      <ul>
+        <li><p><strong>Develop the website</strong></p></li>
+        <li class="li-last"><p><strong>Load many assets without affecting performance</p></strong></li>
+      </ul>
+      <h3>UI process</h3>
+      <p>Our first step in every project is to organize all the info and generate the IA (information 
+        arquitecture). Then with this info we define each screen for the website and this is were we 
+        start our wireframing process. <br> <br>
+        In this process we just use pen and paper to define the structure of the web page, based in 
+        the collected information. This step is were we create the <strong>structure</strong> of the site.
+      </p>
+      <div class="project-img">
+      <img src="../images/play-1.png" alt="" width="100%">
+      </div>
+      <h3>Digitalizing the wireframes</h3>
+      <p>In this step we just clean up the wireframes to get closer to the final structure.</p>
+      <div class="project-img">
+        <img src="../images/play-2.png" alt="" width="100%">
+      </div>
+      <h3>Foundations</h3>
+      <p>+Play's team provided us their foundations, they defined the fonts and colors that we needed
+        to use in their website. Finally we merged all this things with the assets provided by +Play
+         to create the mock up and started making the website´s look and feel.
+      </p>
+      <div class="project-img">
+        <img src="../images/play-3.png" alt=""  width="100%">
+      </div>
+      <h3>Assets loading</h3>
+      <p>In all this process until the mockups were done, I talked a lot with the developer to 
+        understand what things we can and can’t do. Both of us identified that the video assets 
+        were too heavy for the website, so we needed to find a solution for this problem. At first,
+         we thought using gifs directly, but we immediately found that this approach had many issues. 
+         Gif files doesn't have good quality, are not performant on some devices and using classic 
+         image html element didn't provide us full control over the media files and that would be a 
+         problem for the mobile version. We ended up using mp4 files with <strong>html 5 video</strong> and optimizing 
+         them using <strong>ffmpeg</strong>. This solution wouldn't be possible without working closely with the developer.
+         We use the <strong>lazy loading</strong> technique to just load the image that the user is viewing.  
+        </p>
+      <h3>Responsive design</h3>
+      <p>The client and us were pretty happy with the final result, you can see it here: 
+      </p>
+      <div class="project-img">
+        <img src="../images/play-4.png" alt=""  width="100%">
+      </div>
+      <h3>Check it out</h3>
+      <p>You can navigate the +Play's website here:</p>
+      <div class="project-img">
+        <h2 class="link"><a href="https://www.muchomasplay.com/" target="blank"> www.muchomasplay.com</h2></a>
+      </div>
+    </div>
+  </div>   
+  <div class="content container">
+    <hr>
+  </div>     
+  <footer class="container">
+    <div class="footer">
+      <p class="p-footer"><small>Made it with <span style="color: rgb(230, 38, 198);">♥</span> in Bogotá, Colombia.</small></p>
+      <div class="luna">
+        <img src="../images/sun.png" alt="luna" width="15px">
+      </div>
+    </div>
+  </footer>
+  <script src="../script/script.js"></script>
+</body>
+</html>

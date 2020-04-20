@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Inter:700|Source+Sans+Pro&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/animation.css">
+  <link rel="stylesheet" href="../css/estilos.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <script src="https://unpkg.com/micromodal/dist/micromodal.min.js"></script>
+
+
+  <title>Vanegas.pro</title>
+</head>
+<body>
+  <header>
+    <nav class="nav fadeInDown">
+      <div class="nav-container">
+        <a href="../index.html">
+          <div class="nav-item">
+            <img class= "robot" src="../images/unicorni.png" alt="icon" width="14px" style="margin-right: 6px;">
+            <p class="p-nav">Vanegas.pro</p>
+          </div>
+        </a>
+        <span style="margin: 0 2px;" ><p class="p-nav">/</p></span>
+        <a href="illustration.html">
+        <div class="nav-item">
+          <img class= "robot" src="../images/art.png" alt="icon" width="14px" style="margin-right: 6px;">
+          <p class="p-nav">Illustrations</p>
+        </div>
+        </a>
+      </div>
+    </nav>
+    <div class="header-bg">
+
+      </div>
+    </div>
+  </header>
+  <div class="container">
+    <div class="intro-title">
+      <figure class="icon2 icon2-intern">
+        <img src="../images/art.png" alt="Icon"  width="150px">
+      </figure>
+      <h1 class="intro-h1 title-h1">Illustrations</h1>
+    </div>
+    <div class="intro">
+      <div class="intro-detail">
+        <p>I'm a designer focused on making digital products.</p>
+      </div>
+      <div class="intro-button">
+        <button class="contact-button contact-intern contact-button" id="button-modal" data-custom-close="modal-1"><img src="../images/envelope_2709.png" alt="" class="icon-contact"></button>
+        <!-- Modal!  -->
+        <div class="modal micromodal-slide" id="modal-1" aria-hidden="true">
+          <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+            <div
+              class="modal__container"
+              role="dialog"
+              aria-modal="true"
+              aria-labelledby="modal-1-title"
+            >
+              <header class="modal__header">
+                <h2 class="modal__title" id="modal-1-title">
+                  Contact me
+                </h2>
+                <button
+                  class="modal__close"
+                  aria-label="Close modal"
+                  data-micromodal-close
+                ></button>
+              </header>
+              <main class="modal__content" id="modal-1-content">
+                <form action="/enviar correo/" class="form-email">
+                  <div class="cont-modal">
+                    <img src="../images/nerd-face_1f913.png" width="22px" alt="icono">
+                    <label class="label-modal">E-mail</label>
+                  </div>
+                  <input class="custom" type="text" placeholder="Your e-mail here" id="email" />
+                  <div class="cont-modal">
+                    <img src="../images/candy.png" width="22px" alt="icono">  
+                    <label class="label-modal">Message</label>
+                  </div>
+                  <textarea class= "text-area" placeholder="Remember, be nice"name="story" rows="3" cols="20"></textarea>
+                </form>
+              </main>
+              <footer class="modal__footer">
+                <button class="modal__btn modal__btn-primary">Send</button>
+                <button
+                  class="modal__btn"
+                  data-micromodal-close
+                  aria-label="Close this dialog window"
+                >
+                  Close
+                </button>
+              </footer>
+            </div>
+          </div>
+        </div>
+        <!-- Aca acaba el Modal------------- -->
+      </div>
+    </div>
+  </div>
+  <div class="container-general">
+    <div class="container">
+      <h3>Projects</h3>
+      <div class="container-projects">
+        <div class="project">
+          <img src="../images/il-2.png" alt="react">
+        </div>
+        <div class="project">
+          <img src="../images/il-3.png" alt="vue">
+        </div>
+        <div class="project">
+          <img src="../images/il-1.png" alt="vue">
+        </div>
+        <div class="project">
+          <img src="../images/il-4.png" alt="vue">
+        </div>
+        <div class="project">
+          <img src="../images/il-5.png" alt="vue">
+        </div>
+        <div class="project">
+          <img src="../images/il-13.png" alt="vue">
+        </div>
+        <div class="project">
+          <img src="../images/il-11.png" alt="vue">
+        </div>
+        <div class="project">
+          <img src="../images/il-10.png" alt="vue">
+        </div>
+        <div class="project">
+          <img src="../images/il-12.png" alt="vue">
+        </div>
+        <div class="project">
+          <img src="../images/il-7.png" alt="vue">
+        </div>
+        <div class="project">
+          <img src="../images/il-8.png" alt="vue">
+        </div>
+        <div class="project">
+          <img src="../images/il-9.png" alt="vue">
+        </div>
+        <div class="project">
+          <img src="../images/il-6.png" alt="vue">
+        </div>
+      </div>
+    </div>
+  </div>   
+  <div class="content, container">
+    <hr>
+  </div>     
+  <footer class="container">
+    <div class="footer">
+      <p class="p-footer"><small>Made it with <span style="color: rgb(230, 38, 198);">♥</span> in Bogotá, Colombia.</small></p>
+      <div class="luna">
+        <img src="../images/sun.png" alt="luna" width="15px">
+      </div>
+    </div>
+  </footer>
+  <script src="../script/script.js"></script>
+</body>
+</html>
