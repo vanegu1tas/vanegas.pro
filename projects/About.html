@@ -77,9 +77,9 @@
                 <form action="/enviar correo/" class="form-email">
                   <div class="cont-modal">
                     <img src="../images/nerd-face_1f913.png" width="22px" alt="icono">
-                    <label class="label-modal">E-mail</label>
+                    <label class="label-modal" for="email">E-mail</label>
                   </div>
-                  <input class="custom" type="text" placeholder="Your e-mail here" id="email" />
+                  <input class="custom" name="email" type="text" placeholder="Your e-mail here" id="email" />
                   <div class="cont-modal">
                     <img src="../images/candy.png" width="22px" alt="icono">  
                     <label class="label-modal">Message</label>
@@ -89,11 +89,7 @@
               </main>
               <footer class="modal__footer">
                 <button class="modal__btn modal__btn-primary">Send</button>
-                <button
-                  class="modal__btn"
-                  data-micromodal-close
-                  aria-label="Close this dialog window"
-                >
+                <button class="modal__btn" data-micromodal-close aria-label="Close this dialog window">
                   Close
                 </button>
               </footer>
@@ -110,14 +106,14 @@
         <div class="about-info">
           <h3>Hi! :)</h3>
           <p>My name is Daniel Vanegas, I’m a graphic designer from Colombia. I spent the last few years 
-            working along a developer in different kinds of projects, developing my skills as a UI designer 
+            working in different kinds of projects, developing my skills as a UI designer 
             focused in tech industry. All my life, I’ve felt empathy with technology, but I didn’t know 
             how to create it. I made my research and I found this UX/UI world and I realized how I can create 
             technology from the design perspective. <br><br>
 
             Working as a freelance designer focused on digital products, I had the chance to work along with 
             a developer all over this years, and that helped me to understand how to communicate my design 
-            ideas to a tech person and work together as a team. have worked with a developer motivated me to 
+            ideas to a tech person and work together as a team. Having worked with a developer motivated me to 
             learn html, css and Git on my own.
           </p>
         </div>
@@ -127,7 +123,9 @@
     </div>
   </div>
   <div class="container">
-    <button class="cv-button">This is my Cv</button>
+    <a target="_blank" href="https://www.dropbox.com/s/w41vars9y801mr6/CV%20UI.pdf?dl=0">
+      <button class="cv-button">This is my Cv</button>
+    </a>
   </div>
 </div>   
   <div class="container">
