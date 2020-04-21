@@ -58,11 +58,11 @@
                     <img src="images/candy.png" width="22px" alt="icono">  
                     <label class="label-modal">Message</label>
                   </div>
-                  <textarea class= "text-area" placeholder="Remember, be nice"name="story" rows="3" cols="20"></textarea>
+                  <textarea class="text-area" placeholder="Remember, be nice" name="story" rows="3" cols="20" id="msg"></textarea>
                 </form>
               </main>
               <footer class="modal__footer">
-                <button class="modal__btn modal__btn-primary">Send</button>
+                <button id="send" class="modal__btn modal__btn-primary">Send</button>
                 <button
                   class="modal__btn"
                   data-micromodal-close
@@ -126,5 +126,6 @@
     </div>
   </footer>
   <script src="script/script.js"></script>
+  <script src="script/sendMail.js"></script>
 </body>
 </html>
