@@ -228,3 +228,10 @@ h1, h3 {
 .micromodal-slide .modal__overlay {
   will-change: transform;
 }
+
+@media screen and (max-width: 375px){
+  .modal__container {
+    width: 340px;
+    padding: 20px;
+  }
+}

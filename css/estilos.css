@@ -450,6 +450,7 @@ object-fit: cover;
 
   .contact-button.contact-intern {
     top: -38px;
+  }
 }
 
 @media screen and (max-width: 375px){
