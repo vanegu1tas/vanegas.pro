@@ -296,6 +296,12 @@ object-fit: cover;
   right: 50px;
 }
 
+/* #email:valid {
+  border: 2px solid black;
+} */
+
+
+
 @media screen and (max-width: 1023px){
   .nav-container{
     padding-left: 5px;

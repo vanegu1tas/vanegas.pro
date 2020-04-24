@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="../css/animation.css">
   <link rel="stylesheet" href="../css/estilos.css">
   <link rel="stylesheet" href="../css/style.css">
+  <link rel="shortcut icon" type="image/png" href="../images/favicon.png">
   <script src="https://unpkg.com/micromodal/dist/micromodal.min.js"></script>
 
   <title>Vanegas.pro</title>
@@ -66,29 +67,29 @@
                 ></button>
               </header>
               <main class="modal__content" id="modal-1-content">
-                <form action="/enviar correo/" class="form-email">
+                <form id="formulario" class="form-email">
                   <div class="cont-modal">
                     <img src="../images/nerd-face_1f913.png" width="22px" alt="icono">
-                    <label class="label-modal">E-mail</label>
+                    <label for="email" class="label-modal">E-mail</label>
                   </div>
-                  <input class="custom" type="text" placeholder="Your e-mail here" id="email" />
+                  <input class="custom" type="email" placeholder="Your e-mail here" id="email" required/>
                   <div class="cont-modal">
                     <img src="../images/candy.png" width="22px" alt="icono">  
-                    <label class="label-modal">Message</label>
+                    <label for="msg" class="label-modal">Message</label>
                   </div>
-                  <textarea class= "text-area" placeholder="Remember, be nice"name="story" rows="3" cols="20"></textarea>
+                  <textarea class="text-area" placeholder="Remember, be nice" name="story" rows="3" cols="20" id="msg" required></textarea>
+                  <div class="modal__footer">
+                    <button type="submit" id="send" class="modal__btn modal__btn-primary">Send</button>
+                    <button
+                      class="modal__btn"
+                      data-micromodal-close
+                      aria-label="Close this dialog window"
+                    >
+                      Close
+                    </button>
+                  </div>
                 </form>
               </main>
-              <footer class="modal__footer">
-                <button class="modal__btn modal__btn-primary">Send</button>
-                <button
-                  class="modal__btn"
-                  data-micromodal-close
-                  aria-label="Close this dialog window"
-                >
-                  Close
-                </button>
-              </footer>
             </div>
           </div>
         </div>
@@ -136,5 +137,6 @@
     </div>
   </footer>
   <script src="../script/script.js"></script>
+  <script src="../script/sendMail.js"></script>
 </body>
 </html>

@@ -3,13 +3,15 @@
 const email = document.getElementById("email");
 const msg = document.getElementById("msg");
 const sendButton = document.getElementById("send");
+const formulario = document.getElementById("formulario");
 
-const handleSendEmail = () => {
-    if (email.validity.valid || msg.value.length === 0) {
-      // formulario no válido!
-      console.log("Not valid");
-      return;
-    }
+const handleSendEmail = (event) => {
+  event.preventDefault();
+    // if (email.value.length > 0 && !email.validity.valid || msg.value.length === 0) {
+    //   // formulario no válido!
+    //   console.log("Not valid");
+    //   return;
+    // }
     sendButton.disabled = true;
     const data = {
                     email: email.value, 
@@ -31,6 +33,7 @@ const handleSendEmail = () => {
         console.log(myJson);
         // Acá debe ir la acción de envío correcto
         MicroModal.close('modal-1');
+        swal("Thanks to contact me!", "I'll reply you soon", "success");
         email.value = "";
         msg.value = "";
       })
@@ -38,7 +41,8 @@ const handleSendEmail = () => {
         sendButton.disabled = false;
         console.log("Something went wrong");
         // Acá debe ir la acción de envío fallido
+        swal("Something went wrong", "Please, try again", "error");
       });
 }
 
-sendButton.addEventListener("click", handleSendEmail);
+formulario.addEventListener("submit", handleSendEmail);
