@@ -363,6 +363,7 @@ li p{
   top: 0;
   left: 0;
   background: linear-gradient(22deg, rgb(26, 2, 41) -4%, rgba(0, 0, 0, 0) 48%);
+ 
 }
 
 .text {
@@ -625,6 +626,20 @@ object-fit: cover;
 
   .contact-button.contact-intern {
     top: -38px;
+  }
+}
+
+@media screen and (max-width: 426px){
+  .card-menu{
+    padding: 10px;
+  }
+
+  p.card {
+    font-size: 13px;
+  }
+
+  .card-detail{
+    margin: 0 4px;
   }
 }
 
