@@ -39,12 +39,13 @@ h2{
 
 h3{
   font-size: 1.4em;
-  margin: 14px 0 14px 0;
+  margin: 0px 0 16px 0;
   
   
 }
 
 h3.card {
+  font-size: 1.2em;
   margin: 0;
 }
 
@@ -156,15 +157,15 @@ li p{
   /* border: 1px solid red; */
   height: 102px;
   border-radius: 16px;
-  padding: 15px;
+  padding: 16px;
   display: flex;
   align-items: center;
   box-sizing: border-box;
-  transition: transform 400ms;
+  transition: all 400ms;
 }
 
 .card-menu:hover{
-  transform: scale(1.1, 1.1);
+  transform: scale(1.03, 1.03);
   box-shadow: 0px 4.80232px 11px rgba(0, 0, 0, 0.2);
 }
 
@@ -223,9 +224,13 @@ li p{
   padding: 0 20px 0 20px;
   box-sizing: border-box;
   position: relative;
+} 
+
+.container.margintop{
+  margin-top: 40px;
 }
 
-.container.hr {
+.hr {
   width: 100%;
   margin: 5px 0;
   max-width: 860px;
@@ -257,7 +262,7 @@ li p{
 }
 
 .intro-h1{
-  font-size: 3.1em;
+  font-size: 2.8em;
   margin-bottom: 20px;
 }
 
@@ -306,7 +311,9 @@ li p{
   font-family: 'Inter', sans-serif;
   font-size: 14px;
   letter-spacing: 1px;
+  cursor: pointer;
 }
+
 
 .contact-button.contact-intern{
   top: -55px;
@@ -432,7 +439,8 @@ object-fit: cover;
 .footer {
   /* border: 1px solid blue; */
   width: 100%;
-  margin: 0 auto;
+  margin-top: 40px;
+  margin-bottom: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
