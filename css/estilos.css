@@ -5,9 +5,7 @@ body{
   margin: 0;
   display: flex;
   flex-direction: column;
-  height: 100vh;
-  
-  
+  height: 100vh;  
 }
 
 header{
@@ -31,14 +29,14 @@ h1, h2, h3 {
 }
 
 h2{
-  font-size: 1.8em;
+  font-size: 1.3em;
   color: rgb(230, 38, 198);
   margin: 8px 0;
   
 }
 
 h3{
-  font-size: 1.4em;
+  font-size: 1.3em;
   margin: 0px 0 16px 0;
   
   
@@ -70,6 +68,17 @@ p.details{
   font-size: 16px;
   color: #041946;
   
+}
+
+p.label{
+  color: #596682;
+  font-family: 'Inter';
+  margin: 0px;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.56px; 
 }
 
 a {
@@ -230,6 +239,12 @@ li p{
   margin-top: 40px;
 }
 
+.container-cv{
+  display: flex;
+  flex-direction: row;
+  padding: 20px  0 40px 0;
+}
+
 .hr {
   width: 100%;
   margin: 5px 0;
@@ -237,10 +252,9 @@ li p{
   padding: 0;
 }
 
-
 .intro-title{
   position: relative;
-  margin-top: 70px;
+  margin-top: 80px;
 }
 
 .intro {
@@ -256,9 +270,14 @@ li p{
   margin: 16px 0 16px 5px;
 }
 .icon2.icon2-intern{
-  bottom: 50px;
-  margin: 16px 0 16px 5px;
+  bottom: 110px;
   position: absolute;
+}
+
+.home.title-h1 {
+  font-size: 48px;
+  margin-top: 24px;
+  margin-bottom: 0;
 }
 
 .intro-h1{
@@ -267,12 +286,17 @@ li p{
 }
 
 .intro-h1.title-h1{
+  font-size: 2em;
+  margin-top: 24px;
   margin-bottom: 0;
 }
 
 .intro-detail{
   position: relative;
-  
+}
+
+.intro-detail h2{
+  font-size: 24px;
 }
 
 .icon{
@@ -294,15 +318,16 @@ li p{
 }
 
 .contact-button {
-  border-style: none;
+  border: 1px;
+  border-style: solid;
+  border-color: transparent;
   border-radius: 26px;
-  color: white;
-  background-color: #041946;
+  background: linear-gradient( #47A2D5, #47A2D5) padding-box, linear-gradient(180deg, #72B8DF 46%, rgba(50,15,135,.7) 100%) border-box ;
   /* background-image: linear-gradient(to left, #041946 0%, #6a5acd 90%); */
   /* background-image: linear-gradient(45deg, #4DCCEC 0%, #320F83 100%); */
   /* background: linear-gradient(70deg, blue, pink); */
   /* box-shadow:  3px 4px 10px rgba(34, 34, 34, 0.68); */
-  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 3px 4px rgba(0,0,0,0.53);
+  box-shadow: 0 2px 8px rgba(4,25,70,0.3);
   width: 50px;
   height: 50px;
   padding: 10px 10px;
@@ -320,7 +345,15 @@ li p{
 }
 
 .icon-contact{
-  width: 22px;
+  width: 28px;
+}
+
+.back-button{
+  display:flex;
+  align-items: center;
+  height: inherit;
+  width: fit-content;
+  padding: 0 6px;
 }
 
 .content {
@@ -363,31 +396,44 @@ li p{
   position: relative;
 }
 
+.year{
+  border: 1px solid white;
+  border-radius: 8px;
+  padding: 4px 8px;
+  width: fit-content;
+  background: rgba(255, 255, 255, 0.12);
+}
+
 .overlay {
   position: absolute;
   width: 100%;
   height: 100%;
   top: 0;
   left: 0;
-  background: linear-gradient(22deg, rgb(26, 2, 41) -4%, rgba(0, 0, 0, 0) 48%);
+  /* background: linear-gradient(22deg, rgb(26, 2, 41) -4%, rgba(0, 0, 0, 0) 48%); */
+  background: linear-gradient(200deg, rgba(4, 25, 70, 0.00) 40.26%, #041946 94.27%);
  
 }
 
 .text {
   position: absolute;
   bottom: 0;
-  left: 20px;
-  bottom: 10px;
+  left: 24px;
+  bottom: 19px;
 }
 
 .text h3 {
   color: #FFFFFF;
-  margin: 5px 0;
+  margin: 8px 0 5px 0;
 }
 
 .text p {
   color: #FFFFFF;
-  margin: 5px 0;
+  margin: 0;
+  font-weight: 400;
+  line-height: normal;
+  font-size: 14px;
+  line-height: normal;
 }
 
 .project:hover {
@@ -407,50 +453,78 @@ object-fit: cover;
   margin-bottom: 10px;
 }
 
+.container-about{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
 .about-info{
-  width: 60%;
+  width: 58%;
   box-sizing: border-box;
-  padding-right: 20px;
+  
 }
 
 .about-img{
-  width: 40%;
+  width: 42%;
   margin-top: 28px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  
 }
 
 .about-img img{
-  width: 100%;
-  border-radius: 15px;
+  width: 240px;
+  height: 240px;
+  border-radius: 140px;
+}
+
+.social-icons{
+  display: flex;
+}
+
+.social-icons svg{
+  stroke: #041946;
+  cursor: pointer;
+}
+
+.social-icons svg:hover{
+  stroke: rgb(84, 85, 96);
+}
+
+.social-icons img{
+  width: 24px;
+  height: auto;
 }
 
 .cv-button{
-  border-style: none;
-  border-radius: 26px;
-  color: white;
-  background-color: #041946;
-  width: 130px;
-  padding: 10px;
+  border: 1px solid #95A0B7;
+  border-radius: 8px;
+  color: #041946;
+  background-color: white;
+  padding: 12px 16px;
   font-family: 'Inter', sans-serif;
-  box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.19);
-  margin-top: 10px;
-  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 12px;
+  cursor: pointer;
 }
 
 .footer {
   /* border: 1px solid blue; */
   width: 100%;
-  margin-top: 40px;
-  margin-bottom: 20px;
+  margin-top: 24px;
+  margin-bottom: 24px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  position: relative;
   flex-shrink: 0;
 }
 
 .p-footer{
-  margin: 0 auto;
-  padding: 8px 0 8px 0;
+  margin: 0;
+  padding: 0 20px;
 }
 
 .luna{
@@ -500,6 +574,10 @@ object-fit: cover;
     width: 100vw;
   }
 
+  .container.hr{
+    width: 100%;
+  }
+
   .about-img{
     width: 40%;
     margin-top: 68px;
@@ -521,7 +599,7 @@ object-fit: cover;
   }
 
   .icon{
-    bottom: 92px;
+    bottom: 110px;
   }
 
   .icon2{
@@ -536,12 +614,17 @@ object-fit: cover;
     width: 100vw;
   }
 
+  .container.hr{
+    width: 100%;
+  }
+
   .luna{
     right: 20px;
   }
 
   .intro.intro-res{
     flex-direction: column-reverse;
+    
   }
 
   .about-info{
@@ -562,7 +645,7 @@ object-fit: cover;
   }
 }
 
-@media screen and (max-width: 480px){
+@media screen and (max-width: 497px){
   h2{
     font-size: 1.2em;
     margin: 8px 0 ;
@@ -572,12 +655,16 @@ object-fit: cover;
     font-size: 17px;
   }
 
+  .home.title-h1{
+    font-size: 32px;
+  }
+
   .container{
     width: 100vw;
   }
 
   .icon{
-    bottom: 68px;
+    bottom: 60px;
   }
 
   .icon-unicorn{
@@ -589,9 +676,14 @@ object-fit: cover;
     margin-bottom: 8px;
   }
 
+  .intro-detail h2{
+    font-size: 20px;
+  }
+
   .contact-button{
     width: 36px;
     height: 36px;
+    padding: 8px;
     top: -75px;
   }
 
@@ -621,15 +713,15 @@ object-fit: cover;
   }
 
   .icon2 img{
-    width: 130px;
+    width: 80px;
   }
 
   .intro-title{
-    margin-top: 55px;
+    margin-top: 80px;
   }
 
   .icon2.icon2-intern{
-    bottom: 23px;
+    bottom: 110px;
   }
 
   .contact-button.contact-intern {
@@ -637,21 +729,9 @@ object-fit: cover;
   }
 }
 
+
+
 @media screen and (max-width: 426px){
-  .card-menu{
-    padding: 10px;
-  }
-
-  p.card {
-    font-size: 13px;
-  }
-
-  .card-detail{
-    margin: 0 4px;
-  }
-}
-
-@media screen and (max-width: 375px){
   .intro-h1{
     font-size: 1.6em;
     margin-bottom: 8px;
@@ -663,7 +743,7 @@ object-fit: cover;
   }
 
   .icon{
-    bottom: 54px;
+    bottom: 76px;
   }
 
   .icon-unicorn{
@@ -684,7 +764,7 @@ object-fit: cover;
   }
 
   .icon2.icon2-intern{
-    bottom: 25px;
+    bottom: 100px;
     margin: 16px 0;
   }
   .cv-button{
@@ -711,9 +791,14 @@ object-fit: cover;
     top: -67px;
   }
 
+  .icon{
+    bottom: 108px;
+  }
+
   .icon-unicorn{
     width: 96px;
   }
+
 
   .luna{
     right: 0px;

@@ -8,7 +8,6 @@
   <link rel="stylesheet" href="../css/estilos.css">
   <link rel="stylesheet" href="../css/style.css">
   <link rel="shortcut icon" type="image/png" href="../images/favicon.png">
-  <script src="https://unpkg.com/micromodal/dist/micromodal.min.js"></script>
 
   <title>Vanegas.pro</title>
 </head>
@@ -23,16 +22,9 @@
           </div>
         </a>
         <span style="margin: 0 2px;" ><p class="p-nav">/</p></span>
-        <a href="products.html">
+        <a href="About.html">
         <div class="nav-item">
-          <img class= "robot" src="../images/robot2.png" alt="icon" width="14px" style="margin-right: 6px;">
-          <p class="p-nav">Digital Products</p>
-        </div>
-        </a>
-        <span style="margin: 0 2px;" ><p class="p-nav">/</p></span>
-        <a href="helpdesk.html">
-        <div class="nav-item">
-          <img class= "gear" src="../images/gear.png" alt="icon" width="14px" style="margin-right: 6px;">
+          <img class= "gear" src="../images/nerd-face_1f913.png" alt="icon" width="14px" style="margin-right: 6px;">
           <p class="p-nav">About</p>
         </div>
         </a>
@@ -44,8 +36,14 @@
   <div class="container">
     <div class="intro-title">
       <figure class="icon2 icon2-intern">
-        <img src="../images/nerd-face_1f913.png" alt="Icon"  width="150px">
+        <img src="../images/nerd-face_1f913.png" alt="Icon"  width="80px">
       </figure>
+      <a href="../index.html">
+        <div class="back-button">
+          <img class= "arrow" src="../images/arrow-left.png" alt="icon" width="20px" style="margin-right: 4px;">
+          <p class="label">BACK</p>
+        </div>
+      </a>
       <h1 class="intro-h1 title-h1">About</h1>
     </div>
     <div class="intro">
@@ -54,83 +52,64 @@
         </h2>
       </div>
       <div class="intro-button">
-        <button class="contact-button contact-intern contact-button" id="button-modal" data-custom-close="modal-1"><img src="../images/envelope_2709.png" alt="" class="icon-contact"></button>
-        <!-- Modal!  -->
-        <div class="modal micromodal-slide" id="modal-1" aria-hidden="true">
-          <div class="modal__overlay" tabindex="-1" data-micromodal-close>
-            <div
-              class="modal__container"
-              role="dialog"
-              aria-modal="true"
-              aria-labelledby="modal-1-title"
-            >
-              <header class="modal__header">
-                <h2 class="modal__title" id="modal-1-title">
-                  Contact me
-                </h2>
-                <button
-                  class="modal__close"
-                  aria-label="Close modal"
-                  data-micromodal-close
-                ></button>
-              </header>
-              <main class="modal__content" id="modal-1-content">
-                <form id="formulario" class="form-email">
-                  <div class="cont-modal">
-                    <img src="../images/nerd-face_1f913.png" width="22px" alt="icono">
-                    <label for="email" class="label-modal">E-mail</label>
-                  </div>
-                  <input class="custom" type="email" placeholder="Your e-mail here" id="email" required/>
-                  <div class="cont-modal">
-                    <img src="../images/candy.png" width="22px" alt="icono">  
-                    <label for="msg" class="label-modal">Message</label>
-                  </div>
-                  <textarea class="text-area" placeholder="Remember, be nice" name="story" rows="3" cols="20" id="msg" required></textarea>
-                  <div class="modal__footer">
-                    <button type="submit" id="send" class="modal__btn modal__btn-primary">Send</button>
-                    <button
-                      class="modal__btn"
-                      data-micromodal-close
-                      aria-label="Close this dialog window"
-                    >
-                      Close
-                    </button>
-                  </div>
-                </form>
-              </main>
-            </div>
-          </div>
-        </div>
-        <!-- Aca acaba el Modal------------- -->
       </div>
     </div>
   </div>
   <div class="container-general">
     <div class="container">
-      <div class="intro intro-res">
+      <div class="container-about">
         <div class="about-info">
-          <h3>Hi! :)</h3>
-          <p>My name is Daniel Vanegas, I’m a graphic designer from Colombia. I spent the last few years 
-            working in different kinds of projects, developing my skills as a UI designer 
-            focused in tech industry. All my life, I’ve felt empathy with technology, but I didn’t know 
-            how to create it. I made my research and I found this UX/UI world and I realized how I can create 
-            technology from the design perspective. <br><br>
+          <h3>👋 Hi!</h3>
+          <p>My name is Daniel Vanegas, I’m a product designer exploring the interaction between humans and 
+            digital products, constantly seeking to measure their impact and enhance the user experience. 
+            Focused on crafting engaging interfaces based on users and business needs.
+            <br><br>
 
-            Working as a freelance designer focused on digital products, I had the chance to work along with 
-            a developer all over this years, and that helped me to understand how to communicate my design 
-            ideas to a tech person and work together as a team. Having worked with a developer motivated me to 
-            learn html, css and Git on my own.
+            A lifelong learner, passionate about the intersection between design and technology to create 
+            efficient design systems.
           </p>
+          <div class="container-cv">
+            <a target="_blank" href="https://www.dropbox.com/s/a0dxgv1zhpbzbm5/nCV-2020.pdf?dl=0">
+              <button class="cv-button">Open CV</button>
+            </a>
+          </div>
         </div>
         <div class="about-img">
           <img src="../images/168.jpg" alt="Photo">
+          <div class="social-icons">
+            <a target="_blank" href="https://www.linkedin.com/in/daniel-vanegas-pro/">
+              <svg class="icon-linkedin" width="28" height="28" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_143_22)">
+                <path d="M33.333 49.9999C33.333 45.5796 35.089 41.3404 38.2146 38.2148C41.3402 35.0892 45.5794 33.3333 49.9997 33.3333H150C154.42 33.3333 158.659 35.0892 161.785 38.2148C164.91 41.3404 166.666 45.5796 166.666 49.9999V150C166.666 154.42 164.91 158.659 161.785 161.785C158.659 164.911 154.42 166.667 150 166.667H49.9997C45.5794 166.667 41.3402 164.911 38.2146 161.785C35.089 158.659 33.333 154.42 33.333 150V49.9999Z" stroke-width="12.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M66.667 91.6667V133.333" stroke-width="12.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M66.667 66.6667V66.7527" stroke-width="12.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M100 133.333V91.6667" stroke-width="12.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M133.333 133.333V108.333C133.333 103.913 131.577 99.6739 128.452 96.5483C125.326 93.4227 121.087 91.6667 116.667 91.6667C112.246 91.6667 108.007 93.4227 104.882 96.5483C101.756 99.6739 100 103.913 100 108.333" stroke-width="12.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </g>
+                <defs>
+                <clipPath id="clip0_143_22">
+                <rect width="200" height="200" fill="white"/>
+                </clipPath>
+                </defs>
+              </svg>
+            </a>
+            <a target="_blank" href="https://www.instagram.com/vanegu1tas/">
+              <svg class="icon-insta" width="28" height="28" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_143_29)">
+                <path d="M33.333 66.6666C33.333 57.826 36.8449 49.3476 43.0961 43.0964C49.3473 36.8451 57.8258 33.3333 66.6663 33.3333H133.333C142.174 33.3333 150.652 36.8451 156.903 43.0964C163.154 49.3476 166.666 57.826 166.666 66.6666V133.333C166.666 142.174 163.154 150.652 156.903 156.903C150.652 163.155 142.174 166.667 133.333 166.667H66.6663C57.8258 166.667 49.3473 163.155 43.0961 156.903C36.8449 150.652 33.333 142.174 33.333 133.333V66.6666Z" stroke-width="12.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M75 100C75 106.63 77.6339 112.989 82.3223 117.678C87.0107 122.366 93.3696 125 100 125C106.63 125 112.989 122.366 117.678 117.678C122.366 112.989 125 106.63 125 100C125 93.3696 122.366 87.0107 117.678 82.3223C112.989 77.6339 106.63 75 100 75C93.3696 75 87.0107 77.6339 82.3223 82.3223C77.6339 87.0107 75 93.3696 75 100Z"  stroke-width="12.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M137.5 62.5V62.5898" stroke-width="12.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </g>
+                <defs>
+                <clipPath id="clip0_143_29">
+                <rect width="200" height="200" fill="white"/>
+                </clipPath>
+                </defs>
+              </svg>
+            </a>    
+          </div>
         </div>
     </div>
-  </div>
-  <div class="container">
-    <a target="_blank" href="https://www.dropbox.com/s/a0dxgv1zhpbzbm5/nCV-2020.pdf?dl=0">
-      <button class="cv-button">This is my Cv</button>
-    </a>
   </div>
 </div>   
   <div class="container">
@@ -138,13 +117,14 @@
   </div>     
   <footer class="container">
     <div class="footer">
-      <p class="p-footer"><small>Made with <span class="span-footer" style="color: rgb(230, 38, 198);">♥</span> in Bogotá, Colombia.</small></p>
+      <p class="p-footer"><small>Design with <span class="span-footer" style="color: rgb(230, 38, 198);">♥</span> in Bogotá.</small></p>
+      <p class="p-footer"><small>daniel@vanegas.pro</small></p>
+      <!-- Oculto el icono de darkmode
       <div class="luna">
         <img src="../images/sun.png" alt="luna" width="15px">
-      </div>
+      </div>-->
     </div>
   </footer>
   <script src="../script/script.js"></script>
-  <script src="../script/sendMail.js"></script>
 </body>
 </html>
