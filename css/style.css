@@ -280,7 +280,7 @@ h1, h3 {
 
 /* ======= ALERTS ======= */
 
-.swal-button {
+.swal2-confirm {
   padding: 7px 19px;
   border-radius: 26px;
   background-color: #041946;
@@ -292,14 +292,14 @@ h1, h3 {
   letter-spacing: 1px;
 }
 
-.swal-title {
+.swal2-title {
   margin: 0px;
   font-size: 20px;
   font-family: 'Inter', sans-serif;
   color: #041946;
 }
 
-.swal-text {
+.swal2-html-container {
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 15px;
   color: #333333;
