@@ -33,7 +33,7 @@ const handleSendEmail = (event) => {
         console.log(myJson);
         // Acá debe ir la acción de envío correcto
         MicroModal.close('modal-1');
-        swal("Thanks to contact me!", "I'll reply you soon", "success");
+        Swal.fire({title: "Thanks for contacting me!", text: "I'll reply to you soon", icon: "success"});
         email.value = "";
         msg.value = "";
       })
