@@ -292,6 +292,10 @@ h1, h3 {
   letter-spacing: 1px;
 }
 
+.swal2-confirm.swal2-styled{
+  background-color: #041946;
+}
+
 .swal2-title {
   margin: 0px;
   font-size: 20px;

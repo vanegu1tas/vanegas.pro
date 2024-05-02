@@ -324,8 +324,8 @@ li p{
 
 .tooltip {
   position: absolute;
-  top: -168px;
-  right: -32px;
+  top: -174px;
+  right: -22px;
   visibility: hidden;
   opacity: 0;
   padding: 0.5rem 0.75rem;
@@ -333,13 +333,13 @@ li p{
   white-space: nowrap;
   transition: 0.2s;
   box-shadow: 0 2px 8px rgba(4,25,70,0.3);
-  background: linear-gradient( #47A2D5, #47A2D5) padding-box, linear-gradient(180deg, #72B8DF 46%, rgba(50,15,135,.7) 100%) border-box ;
+  background: #041946;
 }
 
 .tooltip p {
   font-family: "Inter";
   color: #ffffff;
-  font-size: 1rem;
+  font-size: .8rem;
   text-align: left;
   margin: 0;
 }
@@ -349,7 +349,7 @@ li p{
   top: 39px;
   border-top: 10px solid transparent;
   border-bottom: 10px solid transparent;
-  border-left: 10px solid #47A2D5;
+  border-left: 10px solid #041946;
   right: 50%;
   transform: rotateZ(90deg) translateY(-30%);
   bottom: -15px;
